@@ -1,0 +1,12 @@
+/* Root Css */
+:root {
+    --appBg: rgb(27, 42, 67);
+    --principal: rgb(1, 1, 70);
+    --secundario: rgb(0, 0, 0);
+    --fuentePrincipal: rgb(199, 42, 92);
+    --fuenteSecundaria: rgb(141, 247, 122);
+    --fuenteTerciaria: rgb(117, 250, 140);
+    --terminalHeaderColor: rgb(88, 42, 76);
+    --terminalHeaderBorderColor: rgb(128,42,82);
+    --terminalBodyBorderColor: rgb(69, 15, 72);
+}

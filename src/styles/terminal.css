@@ -1,0 +1,128 @@
+/* Terminal CSS */
+.terminal-container {
+    background-image: linear-gradient(135deg, var(--principal) 25%, var(--secundario));
+    height: 90vh;
+    width: 90vw;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.terminal-header {
+    background-color: var(--terminalHeaderColor);
+    height: 40px;
+    border-radius: 10px 10px 0 0;
+    border: 2px var(--terminalHeaderBorderColor) solid;
+    display: flex;
+    align-items: center;
+}
+
+
+.terminal-body {
+    height: 100%;
+    border: 2px var(--terminalBodyBorderColor) solid;
+    border-top: none;
+    border-radius: 0 0 10px 10px;
+    cursor: text;
+}
+
+.terminal-body-content h1 {
+    font-size: 80px;
+    margin-top: 20px;
+    color: var(--fuentePrincipal);
+}
+
+.terminal-body-content h2 {
+    color: var(--fuenteSecundaria);
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.terminal-body-content p {
+    color: var(--fuenteTerciaria);
+    margin-bottom: 5px;
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+.terminal-body-content {
+    max-width: 95%;
+    margin: 0 auto;
+}
+
+.usageButton {
+    width: 13px;
+    height: 13px;
+    margin-left: 10px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.usageButton .button-icon {
+    opacity: 0;
+    padding: 8px;
+    font-size: 10px;
+    text-align: center;
+    color: #535353;
+}
+
+.usageButton:hover .button-icon {
+    opacity: 1;
+}
+
+.usageButton .button-icon.inverted {
+    font-size: 8px;
+}
+
+.terminal-input {
+    background-color: transparent;
+    color: var(--fuenteTerciaria);
+    width: 100%;
+    border: none;
+    line-height: 1.5;
+    font-size: 16px;
+    caret-color: transparent;
+    margin-left: 4px;
+    padding: 0;
+}
+.terminal-input:focus {
+    outline: none;
+    caret-color: transparent;
+}
+
+.input-line {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.input-line p {
+    margin: 0;
+}
+
+.red {
+    background-color: rgb(237, 106, 94);
+}
+.yellow {
+    background-color: rgb(245, 191, 79);
+}
+.green {
+    background-color: rgb(98, 196, 84);
+}
+
+
+/* Media Querys */
+@media (max-width: 768px) {
+    .terminal-body-content h1 {
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 560px) {
+    .terminal-body-content h1 {
+        font-size: 30px;
+    }
+}

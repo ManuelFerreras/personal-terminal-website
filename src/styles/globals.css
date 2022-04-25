@@ -1,0 +1,42 @@
+/* Global CSS */
+
+* {
+    font-family: 'mainFont';
+}
+
+body {
+    background-color: var(--appBg);
+}
+
+h1 {
+    margin: 0;
+    font-weight: bold;
+}
+
+input {
+    margin: 0;
+}
+
+.indentation {
+    margin-left: calc(5px * 4);
+}
+
+.double-indentation {
+    margin-left: calc(5px * 8);
+}
+
+.triple-indentation {
+    margin-left: calc(5px * 12);
+}
+
+.yellow-color {
+    color: yellow;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.inverted {
+    transform: scale(-1, 1);
+}
